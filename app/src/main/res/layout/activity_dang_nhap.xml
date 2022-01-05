@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangNhapActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"/>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="380dp"
+            android:background="@drawable/bodonhang"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐĂNG NHẬP"
+                android:textSize="30sp"
+                android:textColor="@color/xanh"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"/>
+            <EditText
+                android:id="@+id/edttenDN"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bo_edittext_login"
+                android:hint="Tên Đăng Nhập"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"/>
+            <EditText
+                android:id="@+id/edtMK"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bo_edittext_login"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="10dp"/>
+            <Button
+                android:id="@+id/btDN"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/rounded_button"
+                android:text="ĐĂNG NHẬP"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btDK"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rounded_button"
+                android:text="ĐĂNG KÝ"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
